@@ -1,42 +1,110 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+html, body {
+  background: rgb(241, 241, 241);
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  transition: transform 0.2s;
+  width: 1200px;
   text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  display: grid;
+  align-items: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+  font-size: 32px;
+  text-align: center;
+  color: #150e4e;
+  padding: 10px 0;
+  margin: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-size: 24px;
+  text-align: left;
+  color: #150e4e;
+  padding: 5px 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.row {
+  display: flex;
 }
 
-.card {
-  padding: 2em;
+.column {
+  flex: 50%;
 }
 
-.read-the-docs {
-  color: #888;
+.column:first-child {
+  margin-right: 20px;
+}
+
+label {
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #150e4e;
+  font-weight: bold;
+}
+
+span {
+  font-size: 15px;
+  color: #150e4e;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  height: 40px;
+}
+
+input[type="radio"] {
+  display: inline-block;
+  width: 10%;
+  height: 15px;
+  color: rgb(32, 32, 255);
+}
+
+input[type="date"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #4206a3;
+  width:20%;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #2b036c;
 }
